@@ -1,4 +1,4 @@
-object Form1: TForm1
+object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
   Caption = 'Clinica M'#233'dica'
@@ -978,8 +978,7 @@ object Form1: TForm1
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
       TabOrder = 0
-      ExplicitLeft = 0
-      ExplicitTop = 2
+      OnClick = BitBtn1Click
     end
     object BitBtn2: TBitBtn
       Left = 1
@@ -1377,8 +1376,7 @@ object Form1: TForm1
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
       TabOrder = 1
-      ExplicitLeft = 0
-      ExplicitTop = 2
+      OnClick = BitBtn2Click
     end
   end
   object MainMenu1: TMainMenu
@@ -1388,15 +1386,18 @@ object Form1: TForm1
       Caption = 'Sistema'
       object Sair1: TMenuItem
         Caption = 'Sair'
+        OnClick = Sair1Click
       end
     end
     object Cadastro1: TMenuItem
       Caption = 'Cadastro'
       object Pacientes1: TMenuItem
         Caption = 'Pacientes'
+        OnClick = Pacientes1Click
       end
       object Pacientes2: TMenuItem
         Caption = 'Agendamentos'
+        OnClick = Pacientes2Click
       end
     end
   end
